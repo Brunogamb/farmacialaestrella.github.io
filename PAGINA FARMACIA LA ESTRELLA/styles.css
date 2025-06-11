@@ -178,6 +178,15 @@ a {
     max-width: 90%;
 }
 
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 40px auto;
+    max-width: 1200px;
+    width: 90%;
+}
+
 /* FOOTER */
 
 .footer {

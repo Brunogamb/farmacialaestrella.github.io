@@ -7,11 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
             enlace: "ofertas.html",
             alt: "Oferta destacada"
         },
-        {
-            imagen: "IMG/promocion (1).png",
-            enlace: "ofertas.html",
-            alt: "Promoción especial"
-        }
         // Podés seguir agregando más banners aquí
     ];
 
