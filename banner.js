@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
             enlace: "ofertas.html",
             alt: "Oferta destacada"
         },
-        // Podés seguir agregando más banners aquí
     ];
 
     banners.forEach(({ imagen, enlace, alt }) => {

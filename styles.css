@@ -33,15 +33,12 @@ header {
     min-height: 70px; 
     text-align: center;
     border-bottom: 1px solid #b9eaED;
-    box-sizing: border-box;
 }
 
 .header__texto {
     background-color: #b9eaED;
     text-align: center;
     text-decoration: underline;
-    margin: 0;
-    padding: 0;
     color: #444444;
     font-size: 18px;
     font-weight: 300;
@@ -52,10 +49,6 @@ header {
 a {
     text-decoration: none;
     color: inherit;
-}
-
-.logo-link {
-    text-decoration: none;
 }
 
 .logo {
@@ -72,18 +65,18 @@ a {
     font-weight: 400;
 }
 
-.navegacion a:hover, .contacto a:hover, .logo:hover {
-    transform: scale(1.03);
-    transition: all 0.1s;
-    color: #1f1f1f;
-}
-
 .contacto a {
     color: #444444;
     display: inline-block;
     font-size: 25px;
     font-weight: 400;
     cursor: pointer;
+}
+
+.navegacion a:hover, .contacto a:hover, .logo:hover {
+    transform: scale(1.03);
+    transition: all 0.1s;
+    color: #1f1f1f;
 }
 
 /* BODY */
@@ -104,9 +97,10 @@ a {
     font-weight: 600;
 }
 
+/* CARDS */
+
 .cards-container {
-    width: 1470px;
-    max-width: 100%;
+    max-width: 1470px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -147,8 +141,7 @@ a {
 }
 
 .cards-banner {
-    width: 1470px;
-    max-width: 100%;
+    max-width: 1470px;
     margin: auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
@@ -169,14 +162,17 @@ a {
     transform: scale(1.02);
 }
 
+/* SOBRE NOSOTROS */
+
 .descripcion {
     color: #444;
     font-size: 20px;
     text-align: center;
     margin: auto;
-    width: 1200px;
-    max-width: 90%;
+    max-width: 1200px;
 }
+
+/* CONTACTO */
 
 .contact-section {
     display: flex;
@@ -202,6 +198,11 @@ a {
 
 .elementos-contacto {
     margin-bottom: 10px;
+    text-align: center;
+}
+
+.horarios {
+    line-height: 40px;
 }
 
 /* FOOTER */
@@ -213,23 +214,26 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px 20px;
+    padding: 30px 0px;
     margin-top: 40px;
 }
 
 .footer-content {
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-around;
-    width: 90%;
+    justify-content: space-between;
+    width: 80%;
+    align-items: center;
+    gap: 20px;
 }
 
 .footer-section {
     display: flex;
     flex-direction: column;
     margin-bottom: 10px;
-    min-width: 200px;
     cursor: pointer;
+    align-self: flex-start;
 }
 
 .footer-divider {
@@ -287,9 +291,6 @@ a {
 }
 
 @media (max-width: 1190px) {
-    .cards-container {
-        grid-template-columns: 1fr;
-    }
     header {
         padding: 10px 10px; 
     }
@@ -349,38 +350,12 @@ a {
         font-size: 18px;
         padding: 0 10px;
     }
-
-    /* FOOTER */
-    .footer {
-        padding: 20px 10px;
-    }
-
-    .footer-content {
-        width: auto;
-        max-width: 98%;
-    }
-    
-    .footer-divider {
-        width: 100%;
-    }
 }
 
 @media (max-width: 455px) {
     .navegacion a, .contacto a {
         font-size: 18px;
         margin: 5px;
-    }
-
-    .footer-content {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        justify-items: center;
-    }
-
-    .footer-section {
-        min-width: unset;
-        width: 100%;
     }
 }
 
