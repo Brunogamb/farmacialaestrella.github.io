@@ -229,6 +229,7 @@ a {
     flex-direction: column;
     margin-bottom: 10px;
     min-width: 200px;
+    cursor: pointer;
 }
 
 .footer-divider {
