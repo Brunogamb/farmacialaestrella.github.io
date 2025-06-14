@@ -109,29 +109,3 @@ window.addEventListener("DOMContentLoaded", () => {
         container.appendChild(card);
     });
 });
-
-// ADAPTAR ALTURA DE LAS IMÁGENES Y CARDS
-
-window.addEventListener("load", () => {
-    document.querySelectorAll('.card').forEach(card => {
-        const img = card.querySelector('.card-img');
-        
-        if (img.complete) {
-            ajustarAltura(card, img);
-        } else {
-            img.onload = () => ajustarAltura(card, img);
-        }
-    });
-
-    function ajustarAltura(card, img) {
-        if (img.naturalHeight > 1080) {
-            card.style.height = "900px"; // deja que crezca
-            img.style.height = "700px";
-            img.style.objectFit = "cover";
-        } else {
-            card.style.height = "700px"; // o el valor fijo que usás normalmente
-            img.style.height = "500px"; // altura fija normal
-            img.style.objectFit = "cover";
-        }
-    }
-});
