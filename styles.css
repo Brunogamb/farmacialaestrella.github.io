@@ -166,7 +166,6 @@ a {
     background-color: #ffffff;
     transition: 0.2s ease;
     border: 1px solid #b9eaED;
-    height: 95%;
 }
 
 .card-banner img, .card-img {
@@ -178,6 +177,14 @@ a {
 
 .card-banner:hover {
     transform: scale(1.02);
+}
+
+.card-video {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+    object-fit: cover;
 }
 
 /* SOBRE NOSOTROS */
