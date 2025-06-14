@@ -21,6 +21,7 @@ header, main, footer {
 }
 
 main {
+    margin-top: 2rem;
     flex: 1;
 }
 
@@ -52,9 +53,15 @@ a {
 }
 
 .logo {
-    color: #444444;
-    font-size: 32px;
-    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo img{
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
 }
 
 .navegacion a {
@@ -84,7 +91,6 @@ a {
 .titulo {
     color: #444444;
     text-align: center;
-    margin-top: 2rem;
     font-size: 36px;
     font-weight: 700;
 }
@@ -302,27 +308,7 @@ a {
     }
 }
 
-@media (max-width: 810px) {   
-    header {
-        text-align: center;
-        padding: 10px;  
-    }
-
-    .logo-link {
-        display: block;
-        margin-bottom: 10px;
-    }
-
-    .navegacion, .contacto {
-        display: inline-block;
-        margin: 0 5px;
-    }
-
-    .navegacion a, .contacto a {
-        font-size: 20px;
-    }
-}
-@media (max-width: 768px) {
+@media (max-width: 767px) {
     /* TEXTOS PRINCIPALES */
     .titulo {
         font-size: 28px;
@@ -332,6 +318,14 @@ a {
     .subtitulo {
         font-size: 20px;
         margin: 1rem 1rem 2rem;
+    }
+
+    .navegacion, .contacto {
+        display: inline-block;
+    }
+
+    .navegacion a, .contacto a {
+        font-size: 20px;
     }
 
     /* CARDS */
