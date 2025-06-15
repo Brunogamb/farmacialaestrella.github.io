@@ -99,7 +99,7 @@ window.addEventListener("DOMContentLoaded", () => {
         card.classList.add("card");
 
         card.innerHTML = `
-            <img src="${oferta.imagen}" alt="${oferta.nombre}" class="card-img">
+            <img src="${oferta.imagen}" alt="${oferta.nombre}" class="card-img" loading="lazy">
             <div class="card-content">
                 <h3>${oferta.precio}</h3>
                 <h3>${oferta.nombre}</h3>
