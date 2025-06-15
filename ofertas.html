@@ -12,6 +12,15 @@
     <link rel="stylesheet" href="styles.css?v=2">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Farmacia La Estrella</title>
+    <script>
+        fetch('mantenimiento.json')
+        .then(response => response.json())
+        .then(config => {
+            if (config.enMantenimiento && window.location.pathname !== '/mantenimiento.html') {
+            window.location.href = '/mantenimiento.html';
+            }
+        });
+    </script>
 </head>
 <body>
     <!--HEADER-->
