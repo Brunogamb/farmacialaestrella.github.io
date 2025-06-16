@@ -65,4 +65,45 @@ document.addEventListener("DOMContentLoaded", () => {
         );
         observer.observe(video);
     });
+
+//CARRUSEL OBRAS SOCIALES
+
+    const track = document.querySelector('.slide-track');
+    if (!track) return;
+
+    let isHovered = false;
+    let isVisible = true;
+
+    function updateAnimationState() {
+        if (!isVisible || isHovered) {
+            track.style.animationPlayState = 'paused';
+        } else {
+            track.style.animationPlayState = 'running';
+        }
+    }
+
+    // Pausa al hacer hover
+    track.addEventListener('mouseenter', () => {
+        isHovered = true;
+        updateAnimationState();
+    });
+    track.addEventListener('mouseleave', () => {
+        isHovered = false;
+        updateAnimationState();
+    });
+
+    // Pausa si no está en pantalla
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach(entry => {
+                isVisible = entry.isIntersecting;
+                updateAnimationState();
+            });
+        },
+        { threshold: 0.1 }
+    );
+    observer.observe(track);
+
+    // Inicializa el estado
+    updateAnimationState();
 });
