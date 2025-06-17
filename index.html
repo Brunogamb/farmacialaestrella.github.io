@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,10 +8,47 @@
     <meta name="theme-color" content="#b9eaED">
     <meta name="msapplication-navbutton-color" content="#b9eaED">
     <meta name="apple-mobile-web-app-status-bar-style" content="#b9eaED">
+    <!-- Open Graph -->
+    <meta property="og:title" content="Farmacia La Estrella">
+    <meta property="og:description" content="Farmacia La Estrella: productos farmacéuticos, ofertas y atención personalizada.">
+    <meta property="og:image" content="https://www.farmacialaestrella.com.ar/IMG/logo.png">
+    <meta property="og:url" content="https://www.farmacialaestrella.com.ar/">
+    <meta property="og:type" content="website">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Farmacia La Estrella">
+    <meta name="twitter:description" content="Farmacia La Estrella: productos farmacéuticos, ofertas y atención personalizada.">
+    <meta name="twitter:image" content="https://www.farmacialaestrella.com.ar/IMG/logo.png">
+    <link rel="canonical" href="https://www.farmacialaestrella.com.ar/" />
     <link rel="icon" href="IMG/logo.png" type="image/png">
-    <link rel="stylesheet" href="styles.css?v=4">
+    <link rel="stylesheet" href="styles.css?v=5">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <title>Inicio | Farmacia La Estrella</title>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Pharmacy",
+        "name": "Farmacia La Estrella",
+        "image": "https://www.farmacialaestrella.com.ar/IMG/logo.png",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Italia 106",
+            "addressLocality": "Paraná",
+            "addressRegion": "Entre Ríos",
+            "postalCode": "3100",
+            "addressCountry": "AR"
+        },
+        "telephone": "+54 343 431 1060",
+        "email": "laestrellapna@gmail.com",
+        "url": "https://www.farmacialaestrella.com.ar/",
+        "openingHours": "Mo-Fr 08:00-20:00",
+        "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": "-31.7413",
+            "longitude": "-60.5117"
+        }
+    }
+    </script>
     <script>
         fetch('mantenimiento.json')
         .then(response => response.json())
@@ -24,7 +61,7 @@
 </head>
 <body>
     <!--HEADER-->
-    <h2 class="header__texto">Bienvenido a Farmacia La Estrella</h2>
+    <div role="banner"><h2 class="header__texto">Bienvenido a Farmacia La Estrella</h2></div>
     <header class="header">
         <a class="logo" href="index.html"><img src="IMG/logocombinado.png" alt="Farmacia La Estrella"></a>
             <nav class="navegacion">
@@ -128,6 +165,6 @@
             <p class="dev-name">Web desarrollada por <a href="https://github.com/BrunoGamb" target="_blank" class="dev-link">BrunoGamb</a></p>
         </div>
     </footer>
-    <script src="banner.js?v=4"></script>
+    <script src="banner.js?v=5"></script>
 </body>
 </html>
