@@ -82,7 +82,6 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     }
 
-    // Pausa al hacer hover
     track.addEventListener('mouseenter', () => {
         isHovered = true;
         updateAnimationState();
@@ -92,7 +91,6 @@ document.addEventListener("DOMContentLoaded", () => {
         updateAnimationState();
     });
 
-    // Pausa si no está en pantalla
     const observer = new IntersectionObserver(
         (entries) => {
             entries.forEach(entry => {
@@ -104,6 +102,5 @@ document.addEventListener("DOMContentLoaded", () => {
     );
     observer.observe(track);
 
-    // Inicializa el estado
     updateAnimationState();
 });
