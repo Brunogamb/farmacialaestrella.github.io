@@ -299,11 +299,16 @@ a {
 }
 
 .medios-de-pago img {
+    height: 48px;
+    max-width: 120px;
+    width: auto;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
     background: #fff;
     border-radius: 10px;
     box-shadow: 0 0 8px 4px rgba(0,0,0,0.05);
     padding: 10px 16px;
-    height: 54px;
     transition: 0.2s;
 }
 
@@ -444,19 +449,6 @@ a {
 @media (max-width: 650px) {
     .cards-container {
         grid-template-columns: 1fr;
-    }
-}
-
-@media (max-width: 600px) {
-    .medios-de-pago {
-        gap: 6px;
-        padding: 6px 4px;
-        border-radius: 12px;
-        grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
-    }
-    .medios-de-pago img {
-        height: 34px;
-        padding: 4px 6px;
     }
 }
 
